@@ -1,0 +1,211 @@
+Anotações de HTML E CSS
+
+HTML - Não é uma linguagem de programação e sim de marcação, ou seja focado em tags.
+Linguagem html, é uma linguagem focada em conteúdo, podendo ser tex, imagens, vídeos, tabela, lista, entre outros
+CSS -> é focado em design (cores, sombras, tamanhos, posicionamentos)
+JS -> Linguagem de programação focada em INTERAÇÃO (MENU, ANIMAÇÕES, POPUPS, VALIDAÇÕES)
+_________________________________________________________________________________________________________________________________
+
+HTML
+tag -> <>
+<h1>Título </h1>
+<p>parágrafo</>
+<img src="foto.png" alt="exemplo de foto"> #(src (source/origem) e alt são parametros e o que está entre "" são valores) 
+
+Estrutura básica de um Documento HTML
+
+<!DOCTYPE html> #(essa linha diz que vc está desenvolvendo um site em html5 para o navegador)
+<html lang="pt-br"> #(abertura do html em portugues)
+	<head> (cabeça, área de configurações)
+		<meta charset="UTF-8"> #(Significa que meu site será compatível com caracteres UTF-8 (acentos, cedilha, etc))
+		<meta name="viewport"
+		content="width=device-width,
+		inicial-scale=1.0">
+		<little>Document</title>
+	</head>
+
+	<body>
+		<h1>Olá, Mundo! </h1>
+	</body>
+</html> #(fechamento do HTML)
+
+CSS
+h1{ #(h1 seletor)
+   font-family: Arial;
+   font-size: 20pt; #(uma declaração sempre termina com;)
+   color: blue; #(color = propriedade : blue = valor)
+   }
+
+
+INSTALANDO O PROGRAMA
+GOOGLE CHROME COMO NAVEGADOR
+VISUAL STUDIO CODE - BAIXAR NO SITE DA MICROSOFT (https://code.visualstudio.com/)
+
+<hr> cria uma linha horizontal, não tem barra de fechamento
+___________________________________________________________________________________________________________
+Caracteres especiais:
+< &lt; Less Than
+> &gt; Greater than
+<--comentario-->
+
+Para adicionar emoji
+1. Acessar o site emojipedia.org
+2.escolher o emoji
+3. encontrar o número de série que fica lá em baixo
+4. Acrescentar &#x seguido do número de "série" do emoji 
+_____________________________________________________________________________________________________________
+
+FORMATOS DE IMAGEM NA WEB
+-jpeg(.jpg) e jpg (jpeg tem alta compactação, maior que png, porém png tem transparencia e melhor qualidade)
+tamanho de imagem para web geralmente entre 600 e 1500px de largura
+
+COLOCAR IMAGEM NO SITE
+baixar do pc 
+colar a url da imagem
+________________________________________________________________________________________________________________
+
+COMO MUDARO FAVICON DE UM SITE
+
+favicon é o ícone que fica na aba do navegador
+dica: iconarchive.com -> tem uma variedade de ícones para escolher caso não tenha um pronto no seu PC
+favicon.io -> site
+baixar o arquivo no formato ico
+para adicionar link rel="shortcut icon" href="HTML.ico" type="image/x-icon"> (na head)
+________________________________________________________________________________________________________________
+
+HIERARQUIA DE TÍTULOS
+
+os níveis do texto varias de <h1> até <h6>
+________________________________________________________________________________________________________________
+SEMANTICA HTML5
+
+HTML5 não foca em forma e sim em semantica
+<adress> Seu endereço </adress> (leva pra um endereço no google maps)
+_______________________________________________________________________________________________________________
+
+OUTRAS CONFIGURAÇÕES
+
+Para que um cógigo fique mais legível usa-se a tag <code>aqui o seu código </code>
+Para que o código mantenha a identação, utiliza-se <pre></pre> antes do <code>
+exemplo:
+
+<pre>
+	<code>
+		Seu código aqui
+	</code>
+</pre>
+______________________________________________________________________________________________
+ 
+LISTAS
+
+Listas Ordenadas
+
+Listas devem ficar entre <ol>sua lista</o> (Listas Ordenadas) em seguida <li> item da lista </li>
+
+ex:
+<ol>
+	<li>Acordar</li>
+	<li>Escovar os Dentes </li>
+</ol>
+
+Um dica para criar varios <li></li> de uma vez é digitar li*6, assim vai aparecer 6 listas.
+Para que a lista não seja numerado e sim com letras faça:
+<ol type ="a"> assim vai ficar:
+	a. Acordar
+	b. Escovar os Dentes
+
+Listas Não Ordenadas
+São listas que não seguem sequencias, 1,2,3 e geralmente são representadas por bolinhas
+pra isso usa-se a tag <ul></ul> seguido de <li></li> como o anterior.
+___________________________________________________________________________________________________________
+
+LINKS
+
+LINKS Externos
+
+Para inserir link usar <a href="https://seusite.com" target="_blank" rel="external"> </a>
+O target="_blank" rel="external" serve para que quando cliquem no link abra outra aba e não
+sobreposicione seu site.
+
+LINKS Internos
+abre outra aba:
+target = "_blank"
+real ="external"
+sobrepõe a aba:
+
+lINKS Patrocinados
+Esta página é um oferecimento de <a href="https://www.hostnet.com.br" target="_blank" rel="nofollow"> Hostnet</a>
+
+______________________________________________________________________________________________________________________
+
+VÍDEOS
+
+-> Dica baixar no Pexels
+->  Compatibilidade de Videos: Nem todos os navegadores são compatíveis certo formato de vídeo, os formatos
+mais utilizados são MP4, WEBM,OGV e M4V o interessante é ter o vídeo nos 3 formatos para caso não rode em um, tente no outro.
+-> Dica: usar o handbreak para converter para vários formatos
+-> essa técnica pode custar caro em hospedagem
+
+VIDEOS DE SERVIÇOS DE HOSPEDAGEM
+
+<h1>Inserindo Vídeos do Youtube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0"
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+__________________________________________________________________________________________________________________________________
+CSS - Inline (Cascate Style chets)
+-> não é a forma mais efetiva 
+-> editar linha por linha
+
+<body style="background-color: a cor;font-family: arial (muda a fonte)>
+<p style="text-align:justify;">
+___________________________________________________________________________________________________________________________________
+ESTILO CSS INTERNOS OU LOCAL
+útil geralmente para 1 ou 2 páginas
+
+ESTILO CSS EXTERNOS
+-> mais eficiente
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dica de plug in:
+
+extensóes do chrome: 
+https://chrome.google.com/webstore/category/extensions?hl=pt-br -> link 
+baixar a extensão web developer
+
+
